@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sneaker</title>
+</head>
+<body>
+
+<h2>Sneaker</h2>
+
+<img src="sne.jpg"
+     width="200"
+     onmouseover="this.width=300"
+     onmouseout="this.width=200">
+
+<p>Color:</p>
+<input type="radio" name="c"> Red
+<input type="radio" name="c"> Blue
+<input type="radio" name="c"> Black
+
+<p>Size:</p>
+<input type="radio" name="s"> 7
+<input type="radio" name="s"> 8
+<input type="radio" name="s"> 9
+
+<br><br>
+
+<button onclick="document.getElementById('m').innerHTML='Added!'">
+Add to Cart
+</button>
+
+<p id="m"></p>
+
+<h3>Reviews</h3>
+<p>Good product</p>
+<p>Nice quality</p>
+<p>Worth buying</p>
+
+</body>
+</html>
