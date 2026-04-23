@@ -1,39 +1,94 @@
+
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Sneaker</title>
+    <meta charset="UTF-8">
+    <title>Sneaker Product Page</title>
 </head>
 <body>
 
-<h2>Sneaker</h2>
+    <h1>Online Sneaker Store</h1>
 
-<img src="sne.jpg"
-     width="200"
-     onmouseover="this.width=300"
-     onmouseout="this.width=200">
+    <!-- Product Section -->
+    <section>
+        <h2>Product: Air Max Sneakers</h2>
 
-<p>Color: </p>
-<input type="radio" name="c"> Pink
-<input type="radio" name="c"> Blue
-<input type="radio" name="c"> Black
+        <!-- Product Image (Zoom Placeholder using link) -->
+        <a href="sneaker-large.jpg" target="_blank">
+            <img src="sneaker-small.jpg" alt="Sneaker Image" width="300">
+        </a>
+        <p>Click image to zoom</p>
 
-<p>Size:</p>
-<input type="radio" name="s"> 7
-<input type="radio" name="s"> 8
-<input type="radio" name="s"> 9
+        <!-- Product Description -->
+        <p>
+            Stylish and comfortable sneakers designed for everyday wear.
+            Lightweight, breathable, and durable.
+        </p>
 
-<br><br>
+        <h3>Price: ₹4,999</h3>
 
-<button onclick="document.getElementById('m').innerHTML='Added!'">
-Add to Cart
-</button>
+        <!-- Color Selection -->
+        <h3>Select Color:</h3>
+        <form>
+            <input type="radio" id="red" name="color" value="red">
+            <label for="red">Red</label><br>
 
-<p id="m"></p>
+            <input type="radio" id="black" name="color" value="black">
+            <label for="black">Black</label><br>
 
-<h3>Reviews</h3>
-<p>Good Product</p>
-<p>Nice Quality</p>
-<p>Worth Buying</p>
+            <input type="radio" id="white" name="color" value="white">
+            <label for="white">White</label><br>
+
+            <!-- Size Selection -->
+            <h3>Select Size:</h3>
+
+            <input type="radio" id="size7" name="size" value="7">
+            <label for="size7">7</label><br>
+
+            <input type="radio" id="size8" name="size" value="8">
+            <label for="size8">8</label><br>
+
+            <input type="radio" id="size9" name="size" value="9">
+            <label for="size9">9</label><br>
+
+            <input type="radio" id="size10" name="size" value="10">
+            <label for="size10">10</label><br><br>
+
+            <!-- Add to Cart Button -->
+            <button type="submit">Add to Cart</button>
+        </form>
+
+        <!-- Feedback Message (Static placeholder) -->
+        <p>Item will be added to cart after submission.</p>
+
+    </section>
+
+    <hr>
+
+    <!-- Customer Reviews Section -->
+    <section>
+        <h2>Customer Reviews</h2>
+
+        <article>
+            <h4>Rahul Sharma</h4>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>Very comfortable and stylish sneakers. Totally worth the price!</p>
+        </article>
+
+        <article>
+            <h4>Priya Mehta</h4>
+            <p>⭐⭐⭐⭐</p>
+            <p>Good quality, but size runs slightly large.</p>
+        </article>
+
+        <article>
+            <h4>Amit Verma</h4>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>Excellent design and fast delivery. Loved it!</p>
+        </article>
+
+    </section>
 
 </body>
 </html>
