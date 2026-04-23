@@ -1,41 +1,53 @@
+/* Basic page styling */
 body {
-    font-family: Arial;
-    background-color: lightblue;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 20px;
 }
 
+/* Headings */
 h1 {
     text-align: center;
+    color: #333;
 }
 
-section {
-    background-color: white;
+h2 {
+    color: #444;
+    margin-top: 20px;
+}
+
+/* Paragraph */
+p {
+    background-color: #ffffff;
     padding: 10px;
-    margin: 10px;
-    border: 1px solid black;
+    border: 1px solid #ddd;
 }
 
-img {
-    display: block;
-    margin: auto;
+/* Horizontal line */
+hr {
+    border: 1px solid #ccc;
+    margin: 20px 0;
 }
 
-/* simple zoom */
-img:hover {
-    width: 320px;
+/* Table styling */
+table {
+    width: 100%;
+    background-color: #ffffff;
+    border-collapse: collapse;
 }
 
-/* button simple */
-button {
-    padding: 5px 10px;
+/* Table cells */
+th, td {
+    padding: 10px;
+    text-align: left;
 }
 
-/* thoda feedback */
-button:active {
-    background-color: lightgreen;
+/* Table header */
+th {
+    background-color: #ddd;
 }
 
-/* reviews */
-article {
-    margin-top: 10px;
-    border-top: 1px solid gray;
+/* Alternate row color */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
 }
