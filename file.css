@@ -1,0 +1,41 @@
+body {
+    font-family: Arial;
+    background-color: #eeeeee;
+}
+
+h1 {
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+/* simple zoom */
+img:hover {
+    width: 320px;
+}
+
+/* button simple */
+button {
+    padding: 5px 10px;
+}
+
+/* thoda feedback */
+button:active {
+    background-color: lightgreen;
+}
+
+/* reviews */
+article {
+    margin-top: 10px;
+    border-top: 1px solid gray;
+}
