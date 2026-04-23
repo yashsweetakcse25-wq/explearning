@@ -1,6 +1,6 @@
 /* Body basic styling */
 body {
-    background-color: Light green;
+    bg-color: wheat;
     font-family: Arial;
 }
 
@@ -52,5 +52,5 @@ th, td {
 
 /* Table header */
 th {
-    background-color: wheat;
+    background-color: lightblue;
 }
