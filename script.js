@@ -1,15 +1,30 @@
-function showSection(sectionId) {
+let selectedColor = "";
+let selectedSize = "";
 
-    let sections = document.querySelectorAll(".section");
+// Select color or size
+function selectOption(btn, type) {
 
-    sections.forEach(sec => {
-        sec.classList.remove("active");
-    });
+    // remove active from same group
+    let parent = btn.parentElement;
+    let buttons = parent.querySelectorAll(".option-btn");
 
-    document.getElementById(sectionId).classList.add("active");
+    buttons.forEach(b => b.classList.remove("active-option"));
+
+    btn.classList.add("active-option");
+
+    if (type === "color") {
+        selectedColor = btn.innerText;
+    } else {
+        selectedSize = btn.innerText;
+    }
 }
 
-// default page
-window.onload = function () {
-    showSection("home");
-};
+// Add to cart validation
+function addToCart() {
+    if (selectedColor === "" || selectedSize === "") {
+        alert("Please select color and size first!");
+        return;
+    }
+
+    alert("Added to cart!\nColor: " + selectedColor + "\nSize: " + selectedSize);
+}
