@@ -1,28 +1,15 @@
-let cartCount = localStorage.getItem("cartCount") || 0;
-document.getElementById("cart-count").innerText = cartCount;
+function showSection(sectionId) {
 
-let selectedSize = "";
-let selectedColor = "";
+    let sections = document.querySelectorAll(".section");
 
-function selectSize(size) {
-    selectedSize = size;
-    document.getElementById("size-msg").innerText = "Selected Size: " + size;
+    sections.forEach(sec => {
+        sec.classList.remove("active");
+    });
+
+    document.getElementById(sectionId).classList.add("active");
 }
 
-function selectColor(color) {
-    selectedColor = color;
-    document.getElementById("color-msg").innerText = "Selected Color: " + color;
-}
-
-function addToCart() {
-    if (selectedSize === "" || selectedColor === "") {
-        alert("Select size & color first!");
-        return;
-    }
-
-    cartCount++;
-    localStorage.setItem("cartCount", cartCount);
-    document.getElementById("cart-count").innerText = cartCount;
-
-    alert("Added to cart!");
-}
+// default page
+window.onload = function () {
+    showSection("home");
+};
