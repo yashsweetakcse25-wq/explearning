@@ -89,15 +89,164 @@
     <h2 class="text-center">Gallery</h2>
 
     <div class="row mt-4">
+
+      <!-- CARD 1 (CUSTOM SELECT CARD) -->
       <div class="col-md-4 mb-4">
-  <div class="card p-3 product-card">
+        <div class="card p-3 product-card">
 
-    <img src="ii.jpg" class="card-img-top">
+          <img src="ii.jpg" class="card-img-top">
 
-    <div class="card-body text-center">
+          <div class="card-body text-center">
 
-      <h5>Project 1</h5>
+            <h5>Project 1</h5>
 
+            <p class="fw-bold">Select Color:</p>
+            <button class="btn btn-sm btn-outline-dark option-btn" onclick="selectOption(this,'color')">Black</button>
+            <button class="btn btn-sm btn-outline-secondary option-btn" onclick="selectOption(this,'color')">Grey</button>
+            <button class="btn btn-sm btn-outline-primary option-btn" onclick="selectOption(this,'color')">Blue</button>
+            <button class="btn btn-sm btn-outline-light text-dark option-btn" onclick="selectOption(this,'color')">White</button>
+
+            <p class="fw-bold mt-2">Select Size:</p>
+            <button class="btn btn-sm btn-outline-primary option-btn" onclick="selectOption(this,'size')">6</button>
+            <button class="btn btn-sm btn-outline-primary option-btn" onclick="selectOption(this,'size')">7</button>
+            <button class="btn btn-sm btn-outline-primary option-btn" onclick="selectOption(this,'size')">8</button>
+            <button class="btn btn-sm btn-outline-primary option-btn" onclick="selectOption(this,'size')">9</button>
+
+            <button class="btn btn-success btn-sm mt-3" onclick="addToCart()">
+              Add to Cart
+            </button>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card p-2">
+          <img src="ii.jpg" class="card-img-top">
+          <div class="card-body text-center">
+            <h5>Project 1</h5>
+            <p>Colors:</p>
+            <span class="badge bg-dark">Black</span>
+            <span class="badge bg-light text-dark">White</span>
+
+            <p class="mt-2">Size:</p>
+            <button class="btn btn-sm btn-outline-primary">7</button>
+            <button class="btn btn-sm btn-outline-primary">8</button>
+            <button class="btn btn-sm btn-outline-primary">9</button>
+
+            <button class="btn btn-success btn-sm mt-3">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card p-2">
+          <img src="eee.jpg" class="card-img-top">
+          <div class="card-body text-center">
+            <h5>Project 2</h5>
+            <p>Colors:</p>
+            <span class="badge bg-danger">Red</span>
+            <span class="badge bg-dark">Black</span>
+
+            <p class="mt-2">Size:</p>
+            <button class="btn btn-sm btn-outline-primary">8</button>
+            <button class="btn btn-sm btn-outline-primary">9</button>
+            <button class="btn btn-sm btn-outline-primary">10</button>
+
+            <button class="btn btn-success btn-sm mt-3">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="col-md-4 mb-4">
+        <div class="card p-2">
+          <img src="lll.jpg" class="card-img-top">
+          <div class="card-body text-center">
+            <h5>Project 3</h5>
+
+            <p>Colors:</p>
+            <span class="badge bg-primary">Blue</span>
+            <span class="badge bg-dark">Black</span>
+
+            <p class="mt-2">Size:</p>
+            <button class="btn btn-sm btn-outline-primary">6</button>
+            <button class="btn btn-sm btn-outline-primary">7</button>
+            <button class="btn btn-sm btn-outline-primary">8</button>
+
+            <button class="btn btn-success btn-sm mt-3">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 5 -->
+      <div class="col-md-4 mb-4">
+        <div class="card p-2">
+          <img src="mm.jpg" class="card-img-top">
+          <div class="card-body text-center">
+            <h5>Project 4</h5>
+
+            <p>Colors:</p>
+            <span class="badge bg-warning text-dark">Yellow</span>
+            <span class="badge bg-dark">Black</span>
+
+            <p class="mt-2">Size:</p>
+            <button class="btn btn-sm btn-outline-primary">8</button>
+            <button class="btn btn-sm btn-outline-primary">9</button>
+            <button class="btn btn-sm btn-outline-primary">10</button>
+
+            <button class="btn btn-success btn-sm mt-3">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 6 -->
+      <div class="col-md-4 mb-4">
+        <div class="card p-2">
+          <img src="nn.jpg" class="card-img-top">
+          <div class="card-body text-center">
+            <h5>Project 5</h5>
+
+            <p>Colors:</p>
+            <span class="badge bg-success">Green</span>
+            <span class="badge bg-dark">Black</span>
+
+            <p class="mt-2">Size:</p>
+            <button class="btn btn-sm btn-outline-primary">7</button>
+            <button class="btn btn-sm btn-outline-primary">8</button>
+            <button class="btn btn-sm btn-outline-primary">9</button>
+
+            <button class="btn btn-success btn-sm mt-3">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 7 -->
+      <div class="col-md-4 mb-4">
+        <div class="card p-2">
+          <img src="qq.jpg" class="card-img-top">
+          <div class="card-body text-center">
+            <h5>Project 6</h5>
+
+            <p>Colors:</p>
+            <span class="badge bg-secondary">Grey</span>
+            <span class="badge bg-dark">Black</span>
+
+            <p class="mt-2">Size:</p>
+            <button class="btn btn-sm btn-outline-primary">6</button>
+            <button class="btn btn-sm btn-outline-primary">7</button>
+            <button class="btn btn-sm btn-outline-primary">8</button>
+
+            <button class="btn btn-success btn-sm mt-3">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
       <!-- COLORS -->
       <p class="fw-bold">Select Color:</p>
 
