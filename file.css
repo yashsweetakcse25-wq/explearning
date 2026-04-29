@@ -1,56 +1,36 @@
-/* Body basic styling */
+
 body {
-    bg-color: grey;
-    font-family: Arial;
+    background-color: #f4f6f9;
+    font-family: Arial, sans-serif;
 }
 
-/* Center content spacing */
-center {
-    display: block;
-    margin-top: 20px;
+.hero {
+    margin-top: 40px;
 }
 
-/* Heading styling */
-h1 {
-    color: darkblue;
+.hero h1 {
+    color: #0d6efd;
 }
 
-h2 {
-    color: orange;
+.section {
+    margin-top: 50px;
 }
 
-/* Paragraph styling */
-p {
-    background-color: white;
-    padding: 10px;
-    width: 60%;
-    margin: auto;
-    border: 1px solid white;
+.product-img {
+    max-width: 80%;
+    border-radius: 10px;
 }
 
-/* Horizontal line */
-hr {
-    border: 1px solid black;
+.box {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
 }
 
-/* Table styling */
-table {
-    background-color: white;
-    margin: 10px auto;
-    border-collapse: collapse;
-}
-
-/* Table border */
-table, th, td {
-    border: 1px solid black;
-}
-
-/* Table cell padding */
-th, td {
-    padding: 8px;
-}
-
-/* Table header */
-th {
-    background-color: lightblue;
+.footer {
+    margin-top: 50px;
+    padding: 15px;
+    background: #212529;
+    color: white;
+    text-align: center;
 }
